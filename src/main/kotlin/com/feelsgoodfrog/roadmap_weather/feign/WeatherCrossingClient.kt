@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestParam
 
 @FeignClient("weather", url = "\${roadmap-weather.api.visual-crossing.url}")
-interface WeatherCrossingClient {
+fun interface WeatherCrossingClient {
 
     @GetMapping("/VisualCrossingWebServices/rest/services/timeline/{location}")
     @Cacheable(cacheNames = ["weathers"], key = "#location")
