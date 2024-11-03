@@ -1,0 +1,10 @@
+spring:
+  cache:
+    redis:
+      time-to-live: 12h
+
+roadmap-weather:
+  api:
+    visual-crossing:
+      url: https://weather.visualcrossing.com
+      key: insert-your-key

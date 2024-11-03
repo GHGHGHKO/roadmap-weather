@@ -1,0 +1,83 @@
+package com.feelsgoodfrog.roadmap_weather.dto
+
+import java.io.Serializable
+
+data class WeatherCrossingApiResponseDto(
+    val queryCost: Int,
+    val latitude: Double,
+    val longitude: Double,
+    val resolvedAddress: String,
+    val address: String,
+    val timezone: String,
+    val tzoffset: Int,
+    val description: String,
+    val days: List<Day>
+): Serializable
+
+data class Day(
+    val datetime: String,
+    val datetimeEpoch: Long,
+    val tempmax: Double,
+    val tempmin: Double,
+    val temp: Double,
+    val feelslikemax: Double,
+    val feelslikemin: Double,
+    val feelslike: Double,
+    val dew: Double,
+    val humidity: Double,
+    val precip: Double,
+    val precipprob: Int,
+    val precipcover: Int,
+    val preciptype: List<String>?,
+    val snow: Double,
+    val snowdepth: Double,
+    val windgust: Double,
+    val windspeed: Double,
+    val winddir: Int,
+    val pressure: Double,
+    val cloudcover: Double,
+    val visibility: Double,
+    val solarradiation: Double,
+    val solarenergy: Double,
+    val uvindex: Int,
+    val severerisk: Int,
+    val sunrise: String,
+    val sunriseEpoch: Long,
+    val sunset: String,
+    val sunsetEpoch: Long,
+    val moonphase: Double,
+    val conditions: String,
+    val description: String,
+    val icon: String,
+    val stations: List<String>?,
+    val source: String,
+    val hours: List<Hour>
+): Serializable
+
+data class Hour(
+    val datetime: String,
+    val datetimeEpoch: Long,
+    val temp: Double,
+    val feelslike: Double,
+    val humidity: Double,
+    val dew: Double,
+    val precip: Double,
+    val precipprob: Int,
+    val snow: Double,
+    val snowdepth: Double,
+    val preciptype: List<String>?,
+    val windgust: Double,
+    val windspeed: Double,
+    val winddir: Int,
+    val pressure: Double,
+    val visibility: Double,
+    val cloudcover: Double,
+    val solarradiation: Double,
+    val solarenergy: Double,
+    val uvindex: Int,
+    val severerisk: Int,
+    val conditions: String,
+    val icon: String,
+    val stations: List<String>?,
+    val source: String
+): Serializable
