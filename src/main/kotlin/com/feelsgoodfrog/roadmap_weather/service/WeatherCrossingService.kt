@@ -11,16 +11,14 @@ class WeatherCrossingService(
 ) {
 
     @Value("\${roadmap-weather.api.visual-crossing.key}")
-    private val key: String? = null
+    private val key: String = ""
 
     fun getVisualCrossingWebJson(location: String): WeatherCrossingApiResponseDto? {
         val unitGroup = "metric"
         val contentType = "json"
-        return key?.let {
-            weatherCrossingClient
-                .getVisualCrossingWebServices(
-                    location, unitGroup, it, contentType
-                )
-        }
+        return weatherCrossingClient
+            .getVisualCrossingWebServices(
+                location, unitGroup, key, contentType
+            )
     }
 }
