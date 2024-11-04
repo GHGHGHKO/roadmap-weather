@@ -21,7 +21,10 @@ repositories {
 
 extra["springCloudVersion"] = "2023.0.3"
 
+val kotlinLoggingJvm = "7.0.0"
+
 dependencies {
+	implementation("io.github.oshai:kotlin-logging-jvm:${kotlinLoggingJvm}")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-data-redis")
 	implementation("org.springframework.boot:spring-boot-starter-web")
