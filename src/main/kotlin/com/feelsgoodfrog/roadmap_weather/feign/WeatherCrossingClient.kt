@@ -1,5 +1,6 @@
 package com.feelsgoodfrog.roadmap_weather.feign
 
+import com.feelsgoodfrog.roadmap_weather.config.feign.FeignClientConfiguration
 import com.feelsgoodfrog.roadmap_weather.dto.WeatherCrossingApiResponseDto
 import org.springframework.cache.annotation.Cacheable
 import org.springframework.cloud.openfeign.FeignClient
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestParam
 
-@FeignClient("weather", url = "\${roadmap-weather.api.visual-crossing.url}")
+@FeignClient("weather", url = "\${roadmap-weather.api.visual-crossing.url}", configuration = [FeignClientConfiguration::class])
 fun interface WeatherCrossingClient {
 
     @GetMapping("/VisualCrossingWebServices/rest/services/timeline/{location}")
