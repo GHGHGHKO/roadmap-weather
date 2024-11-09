@@ -2,6 +2,7 @@ package com.feelsgoodfrog.roadmap_weather.controller
 
 import com.feelsgoodfrog.roadmap_weather.dto.WeatherCrossingApiResponseDto
 import com.feelsgoodfrog.roadmap_weather.service.WeatherCrossingService
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -15,6 +16,7 @@ class WeatherCrossingController(
 ) {
 
     @GetMapping("/{location}")
+    @RateLimiter(name = "weathers")
     fun get(
         @PathVariable location: String
     ): ResponseEntity<WeatherCrossingApiResponseDto> {

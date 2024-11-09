@@ -3,6 +3,14 @@ spring:
     redis:
       time-to-live: 12h
 
+resilience4j:
+  ratelimiter:
+    instances:
+      weathers:
+        limit-refresh-period: 20s
+        limit-for-period: 5
+        timeout-duration: 2s
+
 roadmap-weather:
   api:
     visual-crossing:
