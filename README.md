@@ -1,5 +1,6 @@
 # roadmap-weather
-https://roadmap.sh/projects/weather-api-wrapper-service
+https://roadmap.sh/projects/weather-api-wrapper-service  
+https://roadmap.sh/projects/weather-api-wrapper-service/solutions?u=671f97b531d65c235d3ca1bc
 
 1. [How to build](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#how-to-build)
 2. [Before and after using cache](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#before-and-after-using-cache)
