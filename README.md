@@ -1,4 +1,6 @@
 # roadmap-weather
+### spec
+java 21, kotlin, springboot 3.3.5, redis   
 https://roadmap.sh/projects/weather-api-wrapper-service  
 https://roadmap.sh/projects/weather-api-wrapper-service/solutions?u=671f97b531d65c235d3ca1bc
 
