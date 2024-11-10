@@ -4,7 +4,7 @@ https://roadmap.sh/projects/weather-api-wrapper-service
 1. [How to build](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#how-to-build)
 2. [Before and after using cache](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#before-and-after-using-cache)
 3. [Client error handling](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#client-error-handling)
-4. [HTTP requests](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#using-openfeign)
+4. [HTTP requests](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#http-requests)
 5. [Rate limiting to prevent abuse of API](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#rate-limiting-to-prevent-abuse-of-api)
 
 # How to build
