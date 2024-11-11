@@ -4,11 +4,11 @@ java 21, kotlin, springboot 3.3.5, redis
 https://roadmap.sh/projects/weather-api-wrapper-service  
 https://roadmap.sh/projects/weather-api-wrapper-service/solutions?u=671f97b531d65c235d3ca1bc
 
-1. [How to build](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#how-to-build)
-2. [Before and after using cache](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#before-and-after-using-cache)
-3. [Client error handling](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#client-error-handling)
-4. [HTTP requests](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#http-requests)
-5. [Rate limiting to prevent abuse of API](https://github.com/GHGHGHKO/roadmap-weather?tab=readme-ov-file#rate-limiting-to-prevent-abuse-of-api)
+1. [How to build](#how-to-build)
+2. [Before and after using cache](#before-and-after-using-cache)
+3. [Client error handling](#client-error-handling)
+4. [HTTP requests](#http-requests)
+5. [Rate limiting to prevent abuse of API](#rate-limiting-to-prevent-abuse-of-api)
 
 # How to build
 ## Store the API key
